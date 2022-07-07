@@ -30,7 +30,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Cartapia\\FormBuilder": "src/"
+            "Cartapia\\FormBuilder": "src/Kris/LaravelFormBuilder"
         },
         "classmap": [
             "tests/FormBuilderTestCase.php"
