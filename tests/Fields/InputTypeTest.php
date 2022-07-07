@@ -1,8 +1,8 @@
 <?php
 
-use Kris\LaravelFormBuilder\Fields\ButtonType;
-use Kris\LaravelFormBuilder\Fields\InputType;
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Fields\ButtonType;
+use Cartapia\FormBuilder\Fields\InputType;
+use Cartapia\FormBuilder\Form;
 
 class InputTypeTest extends FormBuilderTestCase
 {

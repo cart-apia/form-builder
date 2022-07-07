@@ -1,6 +1,6 @@
 <?php
 
-use Kris\LaravelFormBuilder\Fields\CheckableType;
+use Cartapia\FormBuilder\Fields\CheckableType;
 
 class CheckableTypeTest extends FormBuilderTestCase
 {

@@ -1,7 +1,7 @@
 <?php
 
-use Kris\LaravelFormBuilder\Fields\EntityType;
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Fields\EntityType;
+use Cartapia\FormBuilder\Form;
 
 class EntityTypeTest extends FormBuilderTestCase
 {

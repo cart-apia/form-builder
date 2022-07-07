@@ -1,6 +1,6 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Console;
+namespace Cartapia\FormBuilder\Console;
 
 class FormGenerator
 {

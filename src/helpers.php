@@ -1,7 +1,7 @@
 <?php
 
-use Kris\LaravelFormBuilder\Fields\FormField;
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Fields\FormField;
+use Cartapia\FormBuilder\Form;
 
 if(!function_exists('getFormBuilderViewPath'))
 {
@@ -12,7 +12,7 @@ if(!function_exists('getFormBuilderViewPath'))
         if($c>2 || $p[$c-1]!='php')
             throw new Exception('You should use only *.php files with this function');
 
-        $path = base_path('resources/views/vendor/laravel-form-builder/'.$fileName);
+        $path = base_path('resources/views/vendor/form-builder/'.$fileName);
         return file_exists($path) ? $path : __DIR__.'/views/'.$fileName;
     }
 }

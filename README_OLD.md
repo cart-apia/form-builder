@@ -1,7 +1,7 @@
-[![Build Status](https://img.shields.io/travis/kristijanhusak/laravel-form-builder/master.svg?style=flat)](https://travis-ci.org/kristijanhusak/laravel-form-builder)
-[![Coverage Status](http://img.shields.io/scrutinizer/coverage/g/kristijanhusak/laravel-form-builder.svg?style=flat)](https://scrutinizer-ci.com/g/kristijanhusak/laravel-form-builder/?branch=master)
-[![Total Downloads](https://img.shields.io/packagist/dt/kris/laravel-form-builder.svg?style=flat)](https://packagist.org/packages/kris/laravel-form-builder)
-[![Latest Stable Version](https://img.shields.io/packagist/v/kris/laravel-form-builder.svg?style=flat)](https://packagist.org/packages/kris/laravel-form-builder)
+[![Build Status](https://img.shields.io/travis/kristijanhusak/form-builder/master.svg?style=flat)](https://travis-ci.org/kristijanhusak/form-builder)
+[![Coverage Status](http://img.shields.io/scrutinizer/coverage/g/kristijanhusak/form-builder.svg?style=flat)](https://scrutinizer-ci.com/g/kristijanhusak/form-builder/?branch=master)
+[![Total Downloads](https://img.shields.io/packagist/dt/kris/form-builder.svg?style=flat)](https://packagist.org/packages/kris/form-builder)
+[![Latest Stable Version](https://img.shields.io/packagist/v/kris/form-builder.svg?style=flat)](https://packagist.org/packages/kris/form-builder)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE)
 
 # Laravel 5 form builder
@@ -14,7 +14,7 @@ For laravel 4 version check [laravel4-form-builder](https://github.com/kristijan
 
 
 ## Changelog
-Changelog can be found [here](https://github.com/kristijanhusak/laravel-form-builder/blob/master/CHANGELOG.md)
+Changelog can be found [here](https://github.com/kristijanhusak/form-builder/blob/master/CHANGELOG.md)
 
 ## Table of contents
 1. [Installation](#installation)
@@ -38,7 +38,7 @@ Changelog can be found [here](https://github.com/kristijanhusak/laravel-form-bui
 ``` json
 {
     "require": {
-        "kris/laravel-form-builder": "1.5.*"
+        "kris/form-builder": "1.5.*"
     }
 }
 ```
@@ -50,7 +50,7 @@ Then add Service provider to `config/app.php`
 ``` php
     'providers' => [
         // ...
-        'Kris\LaravelFormBuilder\FormBuilderServiceProvider'
+        'Cartapia\FormBuilder\FormBuilderServiceProvider'
     ]
 ```
 
@@ -59,7 +59,7 @@ And Facade (also in `config/app.php`)
 ``` php
     'aliases' => [
         // ...
-        'FormBuilder' => 'Kris\LaravelFormBuilder\Facades\FormBuilder'
+        'FormBuilder' => 'Cartapia\FormBuilder\Facades\FormBuilder'
     ]
 
 ```
@@ -79,7 +79,7 @@ you create form class in path `app/Forms/PostForm.php` that looks like this:
 ``` php
 <?php namespace App\Forms;
 
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Form;
 
 class PostForm extends Form
 {
@@ -101,7 +101,7 @@ And that will create form in path `app/Forms/SongForm.php` with content:
 ``` php
 <?php namespace App\Forms;
 
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Form;
 
 class SongForm extends Form
 {
@@ -123,7 +123,7 @@ Forms can be used in controller like this:
 <?php namespace App/Http/Controllers;
 
 use Illuminate\Routing\Controller;
-use Kris\LaravelFormBuilder\FormBuilder;
+use Cartapia\FormBuilder\FormBuilder;
 
 class SongsController extends BaseController {
 
@@ -384,7 +384,7 @@ It can be any type that is available in the package. Here are some examples:
 
 ``` php
 <?php
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Form;
 
 class PostForm extends Form
 {
@@ -467,7 +467,7 @@ Then the view will contain:
 ```php
 
 <?php
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Form;
 
 class TagsForm extends Form
 {
@@ -578,7 +578,7 @@ And clicking on the button `.add-to-collection` will automatically generate prop
 
 Prototype can be configured in the form class:
 ```php
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Form;
 
 class PostForm extends Form
 {
@@ -607,7 +607,7 @@ Fields can be easily customized within the class or view:
 ``` php
 <?php namespace App\Forms;
 
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Form;
 
 class PostForm extends Form
 {
@@ -885,7 +885,7 @@ And in form, you can use that model to populate some fields like this
 ``` php
 <?php namespace App\Forms;
 
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Form;
 
 class PostForm extends Form
 {
@@ -915,10 +915,10 @@ As mentioned above, bootstrap 3 form classes are used. If you want to change the
 php artisan vendor:publish
 ```
 
-This will create config file `config/laravel-form-builder.php` and folder with views in `resources/views/vendor/laravel-form-builder`.
+This will create config file `config/form-builder.php` and folder with views in `resources/views/vendor/form-builder`.
 
 Structure of the config needs to be like this:
-[config.php](https://github.com/kristijanhusak/laravel-form-builder/blob/master/src/config/config.php) file.
+[config.php](https://github.com/kristijanhusak/form-builder/blob/master/src/config/config.php) file.
 
 change values in `defaults` key as you wish.
 
@@ -927,7 +927,7 @@ If you would like to avoid typing in full namespace of the form class when creat
 ``` php
 <?php
 
-// config/app/laravel-form-builder.php
+// config/app/form-builder.php
 
 return [
     'default_namespace' => 'App\Forms'
@@ -943,10 +943,10 @@ public function indexAction()
 
 It is empty by default.
 
-All views for fields and forms needs to be similar to this: [views](https://github.com/kristijanhusak/laravel-form-builder/tree/master/src/views)
+All views for fields and forms needs to be similar to this: [views](https://github.com/kristijanhusak/form-builder/tree/master/src/views)
 
 Other way is to change path to the templates in the
-[config.php](https://github.com/kristijanhusak/laravel-form-builder/blob/master/src/config/config.php) file.
+[config.php](https://github.com/kristijanhusak/form-builder/blob/master/src/config/config.php) file.
 
 ``` php
 return [
@@ -961,7 +961,7 @@ One more way to change template is directly from Form class:
 ``` php
 <?php namespace App\Forms;
 
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Form;
 
 class PostForm extends Form
 {
@@ -985,7 +985,7 @@ If you want to create your own custom field, you can do it like this:
 ``` php
 <?php namespace App\Forms\Fields;
 
-use Kris\LaravelFormBuilder\Fields\FormField;
+use Cartapia\FormBuilder\Fields\FormField;
 
 class DatetimeType extends FormField {
 
@@ -1018,7 +1018,7 @@ And then in view you can use what you need:
 
 **Notice:** Package templates uses plain PHP for printing because of plans for supporting version 4 (prevent conflict with tags), but you can use blade for custom fields, just make sure to use tags that are not escaping html (`{!! !!}`)
 
-And then add it to published config file(`config/packages/kris/laravel-form-builder/config.php`) in key `custom-fields` key this:
+And then add it to published config file(`config/packages/kris/form-builder/config.php`) in key `custom-fields` key this:
 
 ``` php
 // ...
@@ -1033,7 +1033,7 @@ Or if you want to load it only for a single form, you can do it directly in Buil
 ``` php
 <?php namespace App\Forms;
 
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Form;
 
 class PostForm extends Form
 {
@@ -1050,7 +1050,7 @@ class PostForm extends Form
 
 ### Contributing
 Project follows [PSR-2](http://www.php-fig.org/psr/psr-2/) standard and it's covered with PHPUnit tests.
-Pull requests should include tests and pass [Travis CI](https://travis-ci.org/kristijanhusak/laravel-form-builder) build.
+Pull requests should include tests and pass [Travis CI](https://travis-ci.org/kristijanhusak/form-builder) build.
 
 To run tests first install dependencies with `composer install`.
 

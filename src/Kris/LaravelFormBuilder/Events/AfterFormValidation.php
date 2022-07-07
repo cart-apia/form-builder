@@ -1,9 +1,9 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Events;
+namespace Cartapia\FormBuilder\Events;
 
 use Illuminate\Contracts\Validation\Validator;
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Form;
 
 class AfterFormValidation
 {

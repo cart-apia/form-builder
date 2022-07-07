@@ -1,6 +1,6 @@
 <?php
 
-use Kris\LaravelFormBuilder\Fields\InputType;
+use Cartapia\FormBuilder\Fields\InputType;
 
 class RulesParserTest extends FormBuilderTestCase
 {

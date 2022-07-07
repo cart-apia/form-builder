@@ -1,6 +1,6 @@
 <?php
 
-namespace Kris\LaravelFormBuilder;
+namespace Cartapia\FormBuilder;
 
 use Illuminate\Contracts\Events\Dispatcher as EventDispatcher;
 use Illuminate\Contracts\Validation\Factory as ValidatorFactory;
@@ -8,11 +8,11 @@ use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
-use Kris\LaravelFormBuilder\Events\AfterFieldCreation;
-use Kris\LaravelFormBuilder\Events\AfterFormValidation;
-use Kris\LaravelFormBuilder\Events\BeforeFormValidation;
-use Kris\LaravelFormBuilder\Fields\FormField;
-use Kris\LaravelFormBuilder\Filters\FilterResolver;
+use Cartapia\FormBuilder\Events\AfterFieldCreation;
+use Cartapia\FormBuilder\Events\AfterFormValidation;
+use Cartapia\FormBuilder\Events\BeforeFormValidation;
+use Cartapia\FormBuilder\Fields\FormField;
+use Cartapia\FormBuilder\Filters\FilterResolver;
 
 class Form
 {
@@ -1413,7 +1413,7 @@ class Form
      * Method filterFields used as *Main* method for starting
      * filtering and request field mutating process.
      *
-     * @return \Kris\LaravelFormBuilder\Form
+     * @return \Cartapia\FormBuilder\Form
      */
     public function filterFields()
     {
@@ -1471,7 +1471,7 @@ class Form
      * If lockFiltering is set to true then we will not
      * filter fields and mutate request data binded to fields.
      *
-     * @return \Kris\LaravelFormBuilder\Form
+     * @return \Cartapia\FormBuilder\Form
      */
     public function lockFiltering()
     {
@@ -1482,7 +1482,7 @@ class Form
     /**
      * Unlock fields filtering/mutating.
      *
-     * @return \Kris\LaravelFormBuilder\Form
+     * @return \Cartapia\FormBuilder\Form
      */
     public function unlockFiltering()
     {

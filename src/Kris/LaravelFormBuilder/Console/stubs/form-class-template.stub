@@ -2,7 +2,7 @@
 
 namespace {{namespace}};
 
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Form;
 
 class {{class}} extends Form
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Filters\Collection;
+namespace Cartapia\FormBuilder\Filters\Collection;
 
-use Kris\LaravelFormBuilder\Filters\FilterInterface;
+use Cartapia\FormBuilder\Filters\FilterInterface;
 
 /**
  * Class PregReplace
  *
- * @package Kris\LaravelFormBuilder\Filters\Collection
+ * @package Cartapia\FormBuilder\Filters\Collection
  * @author  Djordje Stojiljkovic <djordjestojilljkovic@gmail.com>
  */
 class PregReplace implements FilterInterface
@@ -47,7 +47,7 @@ class PregReplace implements FilterInterface
      *
      * @param mixed $pattern - first arg of preg_replace
      *
-     * @return \Kris\LaravelFormBuilder\Filters\Collection\PregReplace
+     * @return \Cartapia\FormBuilder\Filters\Collection\PregReplace
      */
     public function setPattern($pattern)
     {
@@ -70,7 +70,7 @@ class PregReplace implements FilterInterface
      *
      * @param mixed $replacement - same as the second argument of preg_replace
      *
-     * @return \Kris\LaravelFormBuilder\Filters\Collection\PregReplace
+     * @return \Cartapia\FormBuilder\Filters\Collection\PregReplace
      */
     public function setReplacement($replacement)
     {

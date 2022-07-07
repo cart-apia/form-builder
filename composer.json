@@ -1,6 +1,6 @@
 {
-    "name": "kris/laravel-form-builder",
-    "description": "Laravel form builder - symfony like",
+    "name": "cartapia/form-builder",
+    "description": "Form builder - symfony like",
     "keywords": ["laravel", "form", "builder","symfony"],
     "license": "MIT",
     "authors": [
@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "laravelcollective/html": "^5.6|^6|^7|^8|^9",
+        "cartapia/html": "^5.6|^6|^7|^8|^9",
         "illuminate/database": "^5.6@dev|^6|^7|^8|^9",
         "illuminate/validation": "^5.6@dev|^6|^7|^8|^9"
     },
@@ -21,16 +21,16 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Kris\\LaravelFormBuilder\\FormBuilderServiceProvider"
+                "Cartapia\\FormBuilder\\FormBuilderServiceProvider"
             ],
             "aliases": {
-                "FormBuilder": "Kris\\LaravelFormBuilder\\Facades\\FormBuilder"
+                "FormBuilder": "Cartapia\\FormBuilder\\Facades\\FormBuilder"
             }
         }
     },
     "autoload": {
         "psr-0": {
-            "Kris\\LaravelFormBuilder": "src/"
+            "Cartapia\\FormBuilder": "src/"
         },
         "classmap": [
             "tests/FormBuilderTestCase.php"

@@ -1,9 +1,9 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Fields;
+namespace Cartapia\FormBuilder\Fields;
 
 use Illuminate\Support\Arr;
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Form;
 
 abstract class ParentType extends FormField
 {

@@ -1,6 +1,6 @@
 <?php
 
-use Kris\LaravelFormBuilder\Console\FormGenerator;
+use Cartapia\FormBuilder\Console\FormGenerator;
 use PHPUnit\Framework\TestCase;
 
 class FormGeneratorTest extends TestCase

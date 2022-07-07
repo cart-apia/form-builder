@@ -1,13 +1,13 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Filters\Exception;
+namespace Cartapia\FormBuilder\Filters\Exception;
 
 use Throwable;
 
 /**
  * Class UnableToResolveFilterException
  *
- * @package Kris\LaravelFormBuilder\Filters\Exception
+ * @package Cartapia\FormBuilder\Filters\Exception
  * @author  Djordje Stojiljkovic <djordjestojilljkovic@gmail.com>
  */
 class UnableToResolveFilterException extends \Exception

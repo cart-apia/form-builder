@@ -1,12 +1,12 @@
-[![Build Status](https://travis-ci.org/kristijanhusak/laravel-form-builder.svg)](https://travis-ci.org/kristijanhusak/laravel-form-builder)
-[![Coverage Status](http://img.shields.io/scrutinizer/coverage/g/kristijanhusak/laravel-form-builder.svg?style=flat)](https://scrutinizer-ci.com/g/kristijanhusak/laravel-form-builder/?branch=master)
-[![Total Downloads](https://img.shields.io/packagist/dt/kris/laravel-form-builder.svg?style=flat)](https://packagist.org/packages/kris/laravel-form-builder)
-[![Latest Stable Version](https://img.shields.io/packagist/v/kris/laravel-form-builder.svg?style=flat)](https://packagist.org/packages/kris/laravel-form-builder)
+[![Build Status](https://travis-ci.org/kristijanhusak/form-builder.svg)](https://travis-ci.org/kristijanhusak/form-builder)
+[![Coverage Status](http://img.shields.io/scrutinizer/coverage/g/kristijanhusak/form-builder.svg?style=flat)](https://scrutinizer-ci.com/g/kristijanhusak/form-builder/?branch=master)
+[![Total Downloads](https://img.shields.io/packagist/dt/kris/form-builder.svg?style=flat)](https://packagist.org/packages/kris/form-builder)
+[![Latest Stable Version](https://img.shields.io/packagist/v/kris/form-builder.svg?style=flat)](https://packagist.org/packages/kris/form-builder)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE)
 
 # Laravel 5 form builder
 
-[![Join the chat at https://gitter.im/kristijanhusak/laravel-form-builder](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/kristijanhusak/laravel-form-builder?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/kristijanhusak/form-builder](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/kristijanhusak/form-builder?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Form builder for Laravel 5 inspired by Symfony's form builder. With help of Laravels FormBuilder class creates forms that can be easy modified and reused.
 By default it supports Bootstrap 3.
@@ -15,25 +15,25 @@ By default it supports Bootstrap 3.
 For Laravel 4 version check [laravel4-form-builder](https://github.com/kristijanhusak/laravel4-form-builder).
 
 ## Bootstrap 4 support
-To use bootstrap 4 instead of bootstrap 3, install [laravel-form-builder-bs4](https://github.com/ycs77/laravel-form-builder-bs4).
+To use bootstrap 4 instead of bootstrap 3, install [form-builder-bs4](https://github.com/ycs77/form-builder-bs4).
 
 ## Upgrade to 1.6
 If you upgraded to `>1.6.*` from `1.5.*` or earlier, and having problems with form value binding, rename `default_value` to `value`.
 
-More info in [changelog](https://github.com/kristijanhusak/laravel-form-builder/blob/master/CHANGELOG.md).
+More info in [changelog](https://github.com/kristijanhusak/form-builder/blob/master/CHANGELOG.md).
 
 ## Documentation
-For detailed documentation refer to https://kristijanhusak.github.io/laravel-form-builder/.
+For detailed documentation refer to https://kristijanhusak.github.io/form-builder/.
 
 ## Changelog
-Changelog can be found [here](https://github.com/kristijanhusak/laravel-form-builder/blob/master/CHANGELOG.md).
+Changelog can be found [here](https://github.com/kristijanhusak/form-builder/blob/master/CHANGELOG.md).
 
 ## Installation
 
 ### Using Composer
 
 ```sh
-composer require kris/laravel-form-builder
+composer require kris/form-builder
 ```
 
 Or manually by modifying `composer.json` file:
@@ -41,7 +41,7 @@ Or manually by modifying `composer.json` file:
 ``` json
 {
     "require": {
-        "kris/laravel-form-builder": "1.*"
+        "kris/form-builder": "1.*"
     }
 }
 ```
@@ -53,7 +53,7 @@ Then add Service provider to `config/app.php`
 ``` php
     'providers' => [
         // ...
-        Kris\LaravelFormBuilder\FormBuilderServiceProvider::class
+        Cartapia\FormBuilder\FormBuilderServiceProvider::class
     ]
 ```
 
@@ -62,7 +62,7 @@ And Facade (also in `config/app.php`)
 ``` php
     'aliases' => [
         // ...
-        'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class
+        'FormBuilder' => Cartapia\FormBuilder\Facades\FormBuilder::class
     ]
 
 ```
@@ -85,8 +85,8 @@ Form is created in path `app/Forms/SongForm.php` with content:
 
 namespace App\Forms;
 
-use Kris\LaravelFormBuilder\Form;
-use Kris\LaravelFormBuilder\Field;
+use Cartapia\FormBuilder\Form;
+use Cartapia\FormBuilder\Field;
 
 class SongForm extends Form
 {
@@ -117,7 +117,7 @@ Gives:
 
 namespace App\Forms;
 
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Form;
 
 class PostForm extends Form
 {
@@ -136,7 +136,7 @@ After that instantiate the class in the controller and pass it to view:
 namespace App\Http\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
-use Kris\LaravelFormBuilder\FormBuilder;
+use Cartapia\FormBuilder\FormBuilder;
 
 class SongsController extends BaseController {
 
@@ -171,7 +171,7 @@ Alternative example:
 namespace App\Http\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
-use Kris\LaravelFormBuilder\FormBuilder;
+use Cartapia\FormBuilder\FormBuilder;
 use App\Forms\SongForm;
 
 class SongsController extends BaseController {
@@ -208,7 +208,7 @@ If you want to store a model after a form submit considerating all fields are mo
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Kris\LaravelFormBuilder\FormBuilder;
+use Cartapia\FormBuilder\FormBuilder;
 use App\SongForm;
 
 class SongFormController extends Controller
@@ -217,7 +217,7 @@ class SongFormController extends Controller
     {
         $form = $formBuilder->create(\App\Forms\SongForm::class);
         $form->redirectIfNotValid();
-        
+
         SongForm::create($form->getFieldValues());
 
         // Do redirecting...
@@ -232,7 +232,7 @@ You can only save properties you need:
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Kris\LaravelFormBuilder\FormBuilder;
+use Cartapia\FormBuilder\FormBuilder;
 use App\SongForm;
 
 class SongFormController extends Controller
@@ -241,7 +241,7 @@ class SongFormController extends Controller
     {
         $form = $formBuilder->create(\App\Forms\SongForm::class);
         $form->redirectIfNotValid();
-        
+
         $songForm = new SongForm();
         $songForm->fill($request->only(['name', 'artist'])->save();
 
@@ -257,7 +257,7 @@ Or you can update any model after form submit:
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Kris\LaravelFormBuilder\FormBuilder;
+use Cartapia\FormBuilder\FormBuilder;
 use App\SongForm;
 
 class SongFormController extends Controller
@@ -329,8 +329,8 @@ Or you can generate forms easier by using simple array
 namespace App\Http\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
-use Kris\LaravelFormBuilder\FormBuilder;
-use Kris\LaravelFormBuilder\Field;
+use Cartapia\FormBuilder\FormBuilder;
+use Cartapia\FormBuilder\Field;
 use App\Forms\SongForm;
 
 class SongsController extends BaseController {
@@ -365,7 +365,7 @@ class SongsController extends BaseController {
 ## Contributing
 
 Project follows [PSR-2](http://www.php-fig.org/psr/psr-2/) standard and it's covered with PHPUnit tests.
-Pull requests should include tests and pass [Travis CI](https://travis-ci.org/kristijanhusak/laravel-form-builder) build.
+Pull requests should include tests and pass [Travis CI](https://travis-ci.org/kristijanhusak/form-builder) build.
 
 To run tests first install dependencies with `composer install`.
 

@@ -1,7 +1,7 @@
 <?php
 
-use Kris\LaravelFormBuilder\Form;
-use Kris\LaravelFormBuilder\Traits\ValidatesWhenResolved;
+use Cartapia\FormBuilder\Form;
+use Cartapia\FormBuilder\Traits\ValidatesWhenResolved;
 
 class TestForm extends Form
 {

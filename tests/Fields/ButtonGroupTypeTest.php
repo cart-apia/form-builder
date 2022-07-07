@@ -1,6 +1,6 @@
 <?php
 
-use Kris\LaravelFormBuilder\Fields\ButtonGroupType;
+use Cartapia\FormBuilder\Fields\ButtonGroupType;
 
 class ButtonGroupTypeTest extends FormBuilderTestCase
 {

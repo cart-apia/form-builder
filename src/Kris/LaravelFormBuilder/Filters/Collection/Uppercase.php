@@ -1,13 +1,13 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Filters\Collection;
+namespace Cartapia\FormBuilder\Filters\Collection;
 
-use Kris\LaravelFormBuilder\Filters\FilterInterface;
+use Cartapia\FormBuilder\Filters\FilterInterface;
 
 /**
  * Class Uppercase
  *
- * @package Kris\LaravelFormBuilder\Filters\Collection
+ * @package Cartapia\FormBuilder\Filters\Collection
  * @author  Djordje Stojiljkovic <djordjestojilljkovic@gmail.com>
  */
 class Uppercase implements FilterInterface
@@ -36,7 +36,7 @@ class Uppercase implements FilterInterface
     /**
      * @param null $encoding
      *
-     * @return \Kris\LaravelFormBuilder\Filters\Collection\Uppercase
+     * @return \Cartapia\FormBuilder\Filters\Collection\Uppercase
      *
      * @throws \Exception
      */

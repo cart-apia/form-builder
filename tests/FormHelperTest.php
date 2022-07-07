@@ -1,6 +1,6 @@
 <?php
 
-use Kris\LaravelFormBuilder\FormHelper;
+use Cartapia\FormBuilder\FormHelper;
 use Illuminate\Support\Collection;
 
 class FormHelperTest extends FormBuilderTestCase
@@ -53,22 +53,22 @@ class FormHelperTest extends FormBuilderTestCase
         $collection = $this->formHelper->getFieldType('collection');
         $static = $this->formHelper->getFieldType('static');
         $entity = $this->formHelper->getFieldType('entity');
-        $className = $this->formHelper->getFieldType('Kris\\LaravelFormBuilder\\Fields\\InputType');
+        $className = $this->formHelper->getFieldType('Cartapia\\FormBuilder\\Fields\\InputType');
 
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\InputType', $input);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\SelectType', $select);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\TextareaType', $textarea);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\ButtonType', $submit);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\ButtonType', $reset);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\ButtonType', $button);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\CheckableType', $radio);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\CheckableType', $checkbox);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\ChoiceType', $choice);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\RepeatedType', $repeated);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\CollectionType', $collection);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\StaticType', $static);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\EntityType', $entity);
-        $this->assertEquals('Kris\\LaravelFormBuilder\\Fields\\InputType', $className);
+        $this->assertEquals('Cartapia\\FormBuilder\\Fields\\InputType', $input);
+        $this->assertEquals('Cartapia\\FormBuilder\\Fields\\SelectType', $select);
+        $this->assertEquals('Cartapia\\FormBuilder\\Fields\\TextareaType', $textarea);
+        $this->assertEquals('Cartapia\\FormBuilder\\Fields\\ButtonType', $submit);
+        $this->assertEquals('Cartapia\\FormBuilder\\Fields\\ButtonType', $reset);
+        $this->assertEquals('Cartapia\\FormBuilder\\Fields\\ButtonType', $button);
+        $this->assertEquals('Cartapia\\FormBuilder\\Fields\\CheckableType', $radio);
+        $this->assertEquals('Cartapia\\FormBuilder\\Fields\\CheckableType', $checkbox);
+        $this->assertEquals('Cartapia\\FormBuilder\\Fields\\ChoiceType', $choice);
+        $this->assertEquals('Cartapia\\FormBuilder\\Fields\\RepeatedType', $repeated);
+        $this->assertEquals('Cartapia\\FormBuilder\\Fields\\CollectionType', $collection);
+        $this->assertEquals('Cartapia\\FormBuilder\\Fields\\StaticType', $static);
+        $this->assertEquals('Cartapia\\FormBuilder\\Fields\\EntityType', $entity);
+        $this->assertEquals('Cartapia\\FormBuilder\\Fields\\InputType', $className);
     }
 
     /**

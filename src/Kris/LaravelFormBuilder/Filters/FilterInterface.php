@@ -1,11 +1,11 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Filters;
+namespace Cartapia\FormBuilder\Filters;
 
 /**
  * Interface FilterInterface
  *
- * @package Kris\LaravelFormBuilder\Filters
+ * @package Cartapia\FormBuilder\Filters
  * @author  Djordje Stojiljkovic <djordjestojilljkovic@gmail.com>
  */
 interface FilterInterface

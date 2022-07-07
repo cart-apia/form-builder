@@ -1,10 +1,10 @@
 <?php
 
-namespace Kris\LaravelFormBuilder;
+namespace Cartapia\FormBuilder;
 
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Contracts\Events\Dispatcher as EventDispatcher;
-use Kris\LaravelFormBuilder\Events\AfterFormCreation;
+use Cartapia\FormBuilder\Events\AfterFormCreation;
 
 class FormBuilder
 {
@@ -56,7 +56,7 @@ class FormBuilder
     /**
      * Create a Form instance.
      *
-     * @param string $formClass The name of the class that inherits \Kris\LaravelFormBuilder\Form.
+     * @param string $formClass The name of the class that inherits \Cartapia\FormBuilder\Form.
      * @param array $options|null
      * @param array $data|null
      * @return Form
@@ -172,7 +172,7 @@ class FormBuilder
      *
      * @param array $options
      * @param array $data
-     * @return \Kris\LaravelFormBuilder\Form
+     * @return \Cartapia\FormBuilder\Form
      */
     public function plain(array $options = [], array $data = [])
     {
@@ -192,10 +192,10 @@ class FormBuilder
     /**
      * Set depedencies and options on existing form instance
      *
-     * @param \Kris\LaravelFormBuilder\Form $instance
+     * @param \Cartapia\FormBuilder\Form $instance
      * @param array $options
      * @param array $data
-     * @return \Kris\LaravelFormBuilder\Form
+     * @return \Cartapia\FormBuilder\Form
      */
     public function setDependenciesAndOptions($instance, array $options = [], array $data = [])
     {

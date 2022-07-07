@@ -2,11 +2,11 @@
 
 namespace {
 
-    use Kris\LaravelFormBuilder\Events\AfterFieldCreation;
-    use Kris\LaravelFormBuilder\Events\AfterFormCreation;
-    use Kris\LaravelFormBuilder\Form;
-    use Kris\LaravelFormBuilder\FormBuilder;
-    use Kris\LaravelFormBuilder\FormHelper;
+    use Cartapia\FormBuilder\Events\AfterFieldCreation;
+    use Cartapia\FormBuilder\Events\AfterFormCreation;
+    use Cartapia\FormBuilder\Form;
+    use Cartapia\FormBuilder\FormBuilder;
+    use Cartapia\FormBuilder\FormHelper;
 
     class FormBuilderTest extends FormBuilderTestCase
     {
@@ -62,7 +62,7 @@ namespace {
             $this->assertEquals($this->request, $customForm->getRequest());
             $this->assertEquals('/posts', $customForm->getUrl());
             $this->assertEquals([1 => 'choice_1', 2 => 'choice_2'], $customForm->getData('dummy_choices'));
-            $this->assertInstanceOf('Kris\\LaravelFormBuilder\\Form', $customForm);
+            $this->assertInstanceOf('Cartapia\\FormBuilder\\Form', $customForm);
             $this->assertArrayHasKey('title', $customForm->getFields());
             $this->assertArrayHasKey('body', $customForm->getFields());
         }
@@ -89,14 +89,14 @@ namespace {
             $this->assertEquals(
                 [
                     // Plain: form first
-                    'Kris\LaravelFormBuilder\Events\AfterFormCreation',
-                    'Kris\LaravelFormBuilder\Events\AfterFieldCreation',
-                    'Kris\LaravelFormBuilder\Events\AfterFieldCreation',
+                    'Cartapia\FormBuilder\Events\AfterFormCreation',
+                    'Cartapia\FormBuilder\Events\AfterFieldCreation',
+                    'Cartapia\FormBuilder\Events\AfterFieldCreation',
 
                     // Class: fields first
-                    'Kris\LaravelFormBuilder\Events\AfterFieldCreation',
-                    'Kris\LaravelFormBuilder\Events\AfterFieldCreation',
-                    'Kris\LaravelFormBuilder\Events\AfterFormCreation',
+                    'Cartapia\FormBuilder\Events\AfterFieldCreation',
+                    'Cartapia\FormBuilder\Events\AfterFieldCreation',
+                    'Cartapia\FormBuilder\Events\AfterFormCreation',
                 ],
                 $events
             );
@@ -167,7 +167,7 @@ namespace {
 
 namespace LaravelFormBuilderTest\Forms {
 
-    use Kris\LaravelFormBuilder\Form;
+    use Cartapia\FormBuilder\Form;
 
     class NamespacedDummyForm extends Form
     {
