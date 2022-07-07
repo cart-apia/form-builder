@@ -1,6 +1,6 @@
 <?php
 
-namespace Kris\LaravelFormBuilder;
+namespace Cartapia\FormBuilder;
 
 trait FormBuilderTrait
 {
@@ -12,11 +12,11 @@ trait FormBuilderTrait
      * @param array  $options Options to pass to the form.
      * @param array  $data additional data to pass to the form.
      *
-     * @return \Kris\LaravelFormBuilder\Form
+     * @return \Cartapia\FormBuilder\Form
      */
     protected function form($name, array $options = [], array $data = [])
     {
-        return \App::make('laravel-form-builder')->create($name, $options, $data);
+        return \App::make('form-builder')->create($name, $options, $data);
     }
 
     /**
@@ -25,10 +25,10 @@ trait FormBuilderTrait
      * @param array $options Options to pass to the form.
      * @param array $data additional data to pass to the form.
      *
-     * @return \Kris\LaravelFormBuilder\Form
+     * @return \Cartapia\FormBuilder\Form
      */
     protected function plain(array $options = [], array $data = [])
     {
-        return \App::make('laravel-form-builder')->plain($options, $data);
+        return \App::make('form-builder')->plain($options, $data);
     }
 }

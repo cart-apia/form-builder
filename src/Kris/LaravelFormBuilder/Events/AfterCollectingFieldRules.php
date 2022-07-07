@@ -1,10 +1,10 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Events;
+namespace Cartapia\FormBuilder\Events;
 
-use Kris\LaravelFormBuilder\Fields\FormField;
-use Kris\LaravelFormBuilder\Form;
-use Kris\LaravelFormBuilder\Rules;
+use Cartapia\FormBuilder\Fields\FormField;
+use Cartapia\FormBuilder\Form;
+use Cartapia\FormBuilder\Rules;
 
 class AfterCollectingFieldRules
 {

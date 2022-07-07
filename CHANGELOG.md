@@ -1,35 +1,35 @@
 ## 1.20.0
-- Add field rules event [#491](https://github.com/kristijanhusak/laravel-form-builder/pull/491)(Thanks to [@rudiedirkx](https://github.com/rudiedirkx))
-- Escape html with `e()` to respect Htmlable [#473](https://github.com/kristijanhusak/laravel-form-builder/pull/473)(Thanks to [@rudiedirkx](https://github.com/rudiedirkx))
-- Fix `datetime_local` to `datetime-local` field constant [#483](https://github.com/kristijanhusak/laravel-form-builder/pull/483)(Thanks to [@nea](https://github.com/nea))
-- Add missing `entity` field to constants [#484](https://github.com/kristijanhusak/laravel-form-builder/pull/484)(Thanks to [@nea](https://github.com/nea))
+- Add field rules event [#491](https://github.com/kristijanhusak/form-builder/pull/491)(Thanks to [@rudiedirkx](https://github.com/rudiedirkx))
+- Escape html with `e()` to respect Htmlable [#473](https://github.com/kristijanhusak/form-builder/pull/473)(Thanks to [@rudiedirkx](https://github.com/rudiedirkx))
+- Fix `datetime_local` to `datetime-local` field constant [#483](https://github.com/kristijanhusak/form-builder/pull/483)(Thanks to [@nea](https://github.com/nea))
+- Add missing `entity` field to constants [#484](https://github.com/kristijanhusak/form-builder/pull/484)(Thanks to [@nea](https://github.com/nea))
 - Fix compatibility with Laravel 5.8 by using EventDispatcher `dispatch` method instead of `fire`
 ## 1.16.0
-- Add option for form specific config. [#406](https://github.com/kristijanhusak/laravel-form-builder/pull/406) (Thanks to [@beghelli](https://github.com/beghelli))
-- Add class enum that contains all field types [#455](https://github.com/kristijanhusak/laravel-form-builder/pull/455) (Thanks to [@tresa02](https://github.com/tresa02))
+- Add option for form specific config. [#406](https://github.com/kristijanhusak/form-builder/pull/406) (Thanks to [@beghelli](https://github.com/beghelli))
+- Add class enum that contains all field types [#455](https://github.com/kristijanhusak/form-builder/pull/455) (Thanks to [@tresa02](https://github.com/tresa02))
 ## 1.15.1
-- Fix issue [#441](https://github.com/kristijanhusak/laravel-form-builder/issues/441)
-- Fix issue [#442](https://github.com/kristijanhusak/laravel-form-builder/issues/442)
+- Fix issue [#441](https://github.com/kristijanhusak/form-builder/issues/441)
+- Fix issue [#442](https://github.com/kristijanhusak/form-builder/issues/442)
 ## 1.15.0
-- Add translation template [#399](https://github.com/kristijanhusak/laravel-form-builder/pull/399) (Thanks to [@koenvu](https://github.com/koenvu))
-- Add field error class [#411](https://github.com/kristijanhusak/laravel-form-builder/pull/411) (Thanks to [@n7olkachev](https://github.com/n7olkachev))
-- Allow using different error bag per form [#414](https://github.com/kristijanhusak/laravel-form-builder/pull/414) (Thanks to [@Fellner96](https://github.com/Fellner96))
-- Get PSR-4 namespace from composer [#424](https://github.com/kristijanhusak/laravel-form-builder/pull/424) (Thanks to [@icfr](https://github.com/icfr))
-- Escape static field value [#407](https://github.com/kristijanhusak/laravel-form-builder/pull/407) (Thanks to [@beghelli](https://github.com/beghelli))
-- Fix missing field name for rule closure [#403](https://github.com/kristijanhusak/laravel-form-builder/pull/403) (Thanks to [@yemenifree](https://github.com/yemenifree))
-- Fix checking trueness of empty array in collection type [#412](https://github.com/kristijanhusak/laravel-form-builder/pull/412) (Thanks to [@kiperz](https://github.com/kiperz))
-- Fix parent type not pushing options to children [#356](https://github.com/kristijanhusak/laravel-form-builder/pull/356) (Thanks to [@pimlie](https://github.com/pimlie))
+- Add translation template [#399](https://github.com/kristijanhusak/form-builder/pull/399) (Thanks to [@koenvu](https://github.com/koenvu))
+- Add field error class [#411](https://github.com/kristijanhusak/form-builder/pull/411) (Thanks to [@n7olkachev](https://github.com/n7olkachev))
+- Allow using different error bag per form [#414](https://github.com/kristijanhusak/form-builder/pull/414) (Thanks to [@Fellner96](https://github.com/Fellner96))
+- Get PSR-4 namespace from composer [#424](https://github.com/kristijanhusak/form-builder/pull/424) (Thanks to [@icfr](https://github.com/icfr))
+- Escape static field value [#407](https://github.com/kristijanhusak/form-builder/pull/407) (Thanks to [@beghelli](https://github.com/beghelli))
+- Fix missing field name for rule closure [#403](https://github.com/kristijanhusak/form-builder/pull/403) (Thanks to [@yemenifree](https://github.com/yemenifree))
+- Fix checking trueness of empty array in collection type [#412](https://github.com/kristijanhusak/form-builder/pull/412) (Thanks to [@kiperz](https://github.com/kiperz))
+- Fix parent type not pushing options to children [#356](https://github.com/kristijanhusak/form-builder/pull/356) (Thanks to [@pimlie](https://github.com/pimlie))
 - Use request as model when validating to properly validate collection types
 - Setup named model after attaching model to form
-- Fix custom closure interpreted as string when using html5 validation rules [#435](https://github.com/kristijanhusak/laravel-form-builder/pull/435) (Thanks to [@yarbsemaj](https://github.com/yarbsemaj))
-- Fix radio and checkbox help block position [#440](https://github.com/kristijanhusak/laravel-form-builder/pull/440) (Thanks to [@sagarnasit](https://github.com/sagarnasit))
+- Fix custom closure interpreted as string when using html5 validation rules [#435](https://github.com/kristijanhusak/form-builder/pull/435) (Thanks to [@yarbsemaj](https://github.com/yarbsemaj))
+- Fix radio and checkbox help block position [#440](https://github.com/kristijanhusak/form-builder/pull/440) (Thanks to [@sagarnasit](https://github.com/sagarnasit))
 ## 1.14.0
 - Fix php7.2 compatibility
 ## 1.13.0
-- Add Laravel 5.5 support [#377](https://github.com/kristijanhusak/laravel-form-builder/pull/377) (Thanks to [@wuwx](https://github.com/wuwx))
-- Add field filters [#376](https://github.com/kristijanhusak/laravel-form-builder/pull/376) (Thanks to [@unckleg](https://github.com/unckleg))
-- Add `data_override` closure for choice type fields [#383](https://github.com/kristijanhusak/laravel-form-builder/pull/383) (Thanks to [@yemenifree](https://github.com/yemenifree))
-- Fix adding client validation attributes to non required fields [#379](https://github.com/kristijanhusak/laravel-form-builder/pull/379) (Thanks to [@koichirose](https://github.com/koichirose))
+- Add Laravel 5.5 support [#377](https://github.com/kristijanhusak/form-builder/pull/377) (Thanks to [@wuwx](https://github.com/wuwx))
+- Add field filters [#376](https://github.com/kristijanhusak/form-builder/pull/376) (Thanks to [@unckleg](https://github.com/unckleg))
+- Add `data_override` closure for choice type fields [#383](https://github.com/kristijanhusak/form-builder/pull/383) (Thanks to [@yemenifree](https://github.com/yemenifree))
+- Fix adding client validation attributes to non required fields [#379](https://github.com/kristijanhusak/form-builder/pull/379) (Thanks to [@koichirose](https://github.com/koichirose))
 
 ## 1.12.1
 - Fix issue #354
@@ -72,9 +72,9 @@
 - Fix adding `required` class to label even without client validation enabled - #261 (Thanks to @koenvu)
 
 ## 1.7.10
-- Fix bug where `error_messages` were not namespaced properly in child forms ([#225](https://github.com/kristijanhusak/laravel-form-builder/issues/225))
-- Add check for field name and forbid reserved words ([#232](https://github.com/kristijanhusak/laravel-form-builder/issues/232))
-- Use Symfony's `TranslatorInterface` instead of Laravel's Translator implementation([#231](https://github.com/kristijanhusak/laravel-form-builder/issues/231))
+- Fix bug where `error_messages` were not namespaced properly in child forms ([#225](https://github.com/kristijanhusak/form-builder/issues/225))
+- Add check for field name and forbid reserved words ([#232](https://github.com/kristijanhusak/form-builder/issues/232))
+- Use Symfony's `TranslatorInterface` instead of Laravel's Translator implementation([#231](https://github.com/kristijanhusak/form-builder/issues/231))
 
 ## 1.7.0
 - Add check for nested translations (Thanks to [@paultela](https://github.com/paultela))
@@ -96,7 +96,7 @@
 
 ## 1.6.41
 - Fix LaravelCollective compatibility with older versions of Laravel (Thanks to [@marcoraddatz](https://github.com/marcoraddatz))
-- Do not throw exception when trying to remove non existing field - [#149](https://github.com/kristijanhusak/laravel-form-builder/issues/149) (Thanks to [@marcoraddatz](https://github.com/marcoraddatz))
+- Do not throw exception when trying to remove non existing field - [#149](https://github.com/kristijanhusak/form-builder/issues/149) (Thanks to [@marcoraddatz](https://github.com/marcoraddatz))
 - Fix README to match php 5.5+ syntax (Thanks to [@marcoraddatz](https://github.com/marcoraddatz))
 
 ## 1.6.40
@@ -118,12 +118,12 @@
 ## 1.6.30
 - Add client side validation (Thanks to [@barryvdh](https://github.com/barryvdh))
 - Extract some part of html in views to own partial
-- Fix select with `multiple` option naming ([#150](https://github.com/kristijanhusak/laravel-form-builder/issues/150))
-- Fix model binding on existing instances of child form([#157](https://github.com/kristijanhusak/laravel-form-builder/issues/157))
-- Fix duplicate `help_block` on select/choice ([#153](https://github.com/kristijanhusak/laravel-form-builder/issues/153))
+- Fix select with `multiple` option naming ([#150](https://github.com/kristijanhusak/form-builder/issues/150))
+- Fix model binding on existing instances of child form([#157](https://github.com/kristijanhusak/form-builder/issues/157))
+- Fix duplicate `help_block` on select/choice ([#153](https://github.com/kristijanhusak/form-builder/issues/153))
 
 ## 1.6.20
-- Add Validation to the Form class ([#135](https://github.com/kristijanhusak/laravel-form-builder/issues/135))
+- Add Validation to the Form class ([#135](https://github.com/kristijanhusak/form-builder/issues/135))
 - Add getters for value and default_value (getValue() and getDefaultValue())
 - Add option to pass template to form class through options
 - Make setValue method public
@@ -163,13 +163,13 @@
 
 ## 1.5.0
 - Bind all fields values manually without Laravel's form builder `Form::model` (Check note below for possible BC break)
-- Add possibility to use Closure as default value for fields which solves issues like in [#98](https://github.com/kristijanhusak/laravel-form-builder/issues/98#issuecomment-103893235)
+- Add possibility to use Closure as default value for fields which solves issues like in [#98](https://github.com/kristijanhusak/form-builder/issues/98#issuecomment-103893235)
 - Fix passing model to child forms
 - Set FormBuilder class properties to protected to allow extending
 - Optmization and other minor fixes
 gg
 **Note**: If You published views before, they need to be updated to prevent possible breaking.
-Since value binding is now done in package, and `Form::model` is removed, views needs to be republished (or updated) to remove `Form::model` from [form.php](https://github.com/kristijanhusak/laravel-form-builder/blob/master/src/views/form.php). Also [choice.php](https://github.com/kristijanhusak/laravel-form-builder/blob/master/src/views/choice.php) needs to be updated to pass `selected` value.
+Since value binding is now done in package, and `Form::model` is removed, views needs to be republished (or updated) to remove `Form::model` from [form.php](https://github.com/kristijanhusak/form-builder/blob/master/src/views/form.php). Also [choice.php](https://github.com/kristijanhusak/form-builder/blob/master/src/views/choice.php) needs to be updated to pass `selected` value.
 
 ## 1.4.26
 - Fix expanded/multiple choice fields id by prefixing it with properly formatted name
@@ -191,14 +191,14 @@ Since value binding is now done in package, and `Form::model` is removed, views 
 - Fix repeated type not closing tags properly
 
 ## 1.4.13
-- Fix default_value for child forms ([#77](https://github.com/kristijanhusak/laravel-form-builder/issues/80))
+- Fix default_value for child forms ([#77](https://github.com/kristijanhusak/form-builder/issues/80))
 - Pass form data to child forms.
 
 ## 1.4.12
-- Fix issue with showing validation errors for nested forms ([#78](https://github.com/kristijanhusak/laravel-form-builder/issues/78). Thanks to [@theshaunwalker](https://github.com/theshaunwalker))
+- Fix issue with showing validation errors for nested forms ([#78](https://github.com/kristijanhusak/form-builder/issues/78). Thanks to [@theshaunwalker](https://github.com/theshaunwalker))
 
 ## 1.4.11
-- Add ability to exclude some fields from rendering ([PR-77](https://github.com/kristijanhusak/laravel-form-builder/pull/77). Thanks to [@theshaunwalker](https://github.com/theshaunwalker))
+- Add ability to exclude some fields from rendering ([PR-77](https://github.com/kristijanhusak/form-builder/pull/77). Thanks to [@theshaunwalker](https://github.com/theshaunwalker))
 
 ## 1.4.10
 - Use old input for collection field type. (Example: after failed validation, redirect back withInput).
@@ -261,7 +261,7 @@ Since value binding is now done in package, and `Form::model` is removed, views 
 - Fix bug where wrapper was not showing if label was false.
 
 ## 1.3.0
-- Add [Collection](https://github.com/kristijanhusak/laravel-form-builder#collection) type
+- Add [Collection](https://github.com/kristijanhusak/form-builder#collection) type
 - Minor fixes
 
 ## 1.2.0
@@ -292,11 +292,11 @@ Since value binding is now done in package, and `Form::model` is removed, views 
 - Fix `child form validation errors not showing` bug.
 
 ## 1.1.4
-- Added `repeated` type field (https://github.com/kristijanhusak/laravel-form-builder#field-customization)
+- Added `repeated` type field (https://github.com/kristijanhusak/form-builder#field-customization)
 - Minor fixes
 
 ## 1.1.3
-- Added [Child form](https://github.com/kristijanhusak/laravel-form-builder#child-form) type
+- Added [Child form](https://github.com/kristijanhusak/form-builder#child-form) type
 - Added `rebuildForm` method
 - Added `getRequest` method
 - Added `setData` and `getData` options to form
@@ -312,9 +312,9 @@ Since value binding is now done in package, and `Form::model` is removed, views 
 - `choice` and `select` types now needs `selected` option to pass key instead of value of choice
 
 ## 1.1
-- Added [Laravel 4](https://github.com/kristijanhusak/laravel-form-builder/tree/laravel-4) support (Tags 0.*)
+- Added [Laravel 4](https://github.com/kristijanhusak/form-builder/tree/laravel-4) support (Tags 0.*)
 - Config loaded outside of class and injected as array
-- Changed command from `laravel-form-builder:make` to `form:make`
+- Changed command from `form-builder:make` to `form:make`
 
 ## 1.0
 - Initial version

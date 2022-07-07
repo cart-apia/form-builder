@@ -1,13 +1,13 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Filters\Collection;
+namespace Cartapia\FormBuilder\Filters\Collection;
 
-use Kris\LaravelFormBuilder\Filters\FilterInterface;
+use Cartapia\FormBuilder\Filters\FilterInterface;
 
 /**
  * Class StripTags
  *
- * @package Kris\LaravelFormBuilder\Filters\Collection
+ * @package Cartapia\FormBuilder\Filters\Collection
  * @author  Djordje Stojiljkovic <djordjestojilljkovic@gmail.com>
  */
 class StripTags implements FilterInterface
@@ -53,7 +53,7 @@ class StripTags implements FilterInterface
      *
      * @param array|string $allowedTags
      *
-     * @return \Kris\LaravelFormBuilder\Filters\Collection\StripTags
+     * @return \Cartapia\FormBuilder\Filters\Collection\StripTags
      */
     public function setAllowedTags($allowedTags)
     {
@@ -110,7 +110,7 @@ class StripTags implements FilterInterface
      *
      * @param array|string $allowedAttribs
      *
-     * @return \Kris\LaravelFormBuilder\Filters\Collection\StripTags
+     * @return \Cartapia\FormBuilder\Filters\Collection\StripTags
      */
     public function setAllowedAttributes($allowedAttribs)
     {

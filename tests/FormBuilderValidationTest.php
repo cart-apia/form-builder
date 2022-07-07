@@ -2,11 +2,11 @@
 
 namespace {
 
-    use Kris\LaravelFormBuilder\Events\AfterFieldCreation;
-    use Kris\LaravelFormBuilder\Events\AfterFormCreation;
-    use Kris\LaravelFormBuilder\Form;
-    use Kris\LaravelFormBuilder\FormBuilder;
-    use Kris\LaravelFormBuilder\FormHelper;
+    use Cartapia\FormBuilder\Events\AfterFieldCreation;
+    use Cartapia\FormBuilder\Events\AfterFormCreation;
+    use Cartapia\FormBuilder\Form;
+    use Cartapia\FormBuilder\FormBuilder;
+    use Cartapia\FormBuilder\FormHelper;
 
     class FormBuilderValidationTest extends FormBuilderTestCase
     {

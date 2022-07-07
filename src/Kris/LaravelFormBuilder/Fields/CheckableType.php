@@ -1,6 +1,6 @@
 <?php
 
-namespace  Kris\LaravelFormBuilder\Fields;
+namespace  Cartapia\FormBuilder\Fields;
 
 class CheckableType extends FormField
 {

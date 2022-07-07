@@ -1,13 +1,13 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Filters\Collection;
+namespace Cartapia\FormBuilder\Filters\Collection;
 
-use Kris\LaravelFormBuilder\Filters\FilterInterface;
+use Cartapia\FormBuilder\Filters\FilterInterface;
 
 /**
  * Class StripNewlines
  *
- * @package Kris\LaravelFormBuilder\Filters\Collection
+ * @package Cartapia\FormBuilder\Filters\Collection
  * @author  Djordje Stojiljkovic <djordjestojilljkovic@gmail.com>
  */
 class StripNewlines implements FilterInterface

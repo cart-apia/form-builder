@@ -1,6 +1,6 @@
 <?php
 
-namespace Kris\LaravelFormBuilder;
+namespace Cartapia\FormBuilder;
 
 use Illuminate\Contracts\Support\MessageBag;
 use Illuminate\Contracts\View\Factory as View;
@@ -8,11 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Translation\Translator;
-use Kris\LaravelFormBuilder\Events\AfterCollectingFieldRules;
-use Kris\LaravelFormBuilder\Fields\CheckableType;
-use Kris\LaravelFormBuilder\Fields\FormField;
-use Kris\LaravelFormBuilder\Form;
-use Kris\LaravelFormBuilder\RulesParser;
+use Cartapia\FormBuilder\Events\AfterCollectingFieldRules;
+use Cartapia\FormBuilder\Fields\CheckableType;
+use Cartapia\FormBuilder\Fields\FormField;
+use Cartapia\FormBuilder\Form;
+use Cartapia\FormBuilder\RulesParser;
 
 class FormHelper
 {

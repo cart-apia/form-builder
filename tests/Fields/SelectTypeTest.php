@@ -1,6 +1,6 @@
 <?php
 
-use Kris\LaravelFormBuilder\Fields\SelectType;
+use Cartapia\FormBuilder\Fields\SelectType;
 
 class SelectTypeTest extends FormBuilderTestCase
 {

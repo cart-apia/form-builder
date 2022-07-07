@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Http\Request;
-use Kris\LaravelFormBuilder\FormHelper;
-use Kris\LaravelFormBuilder\Fields\InputType;
+use Cartapia\FormBuilder\FormHelper;
+use Cartapia\FormBuilder\Fields\InputType;
 
 class FormFieldTest extends FormBuilderTestCase
 {
@@ -303,7 +303,7 @@ class FormFieldTest extends FormBuilderTestCase
      */
     public function it_throws_an_exception_if_filters_override_is_false_but_passed_already_binded_filter()
     {
-        $this->expectException(\Kris\LaravelFormBuilder\Filters\Exception\FilterAlreadyBindedException::class);
+        $this->expectException(\Cartapia\FormBuilder\Filters\Exception\FilterAlreadyBindedException::class);
 
         $customPlainForm = $this->formBuilder->plain();
         $customPlainForm->add('test_field', 'text', [

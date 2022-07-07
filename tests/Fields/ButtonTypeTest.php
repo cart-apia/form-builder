@@ -1,7 +1,7 @@
 <?php
 
-use Kris\LaravelFormBuilder\Fields\ButtonType;
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Fields\ButtonType;
+use Cartapia\FormBuilder\Form;
 
 class ButtonTypeTest extends FormBuilderTestCase
 {
@@ -68,7 +68,7 @@ class ButtonTypeTest extends FormBuilderTestCase
 
         $expectedOptions['wrapper'] = false;
         $expectedOptions['wrapperAttrs'] = null;
-        $expectedOptions['template'] = 'laravel-form-builder::text';
+        $expectedOptions['template'] = 'form-builder::text';
 
         $expectedViewData = [
             'name' => 'some_submit',
@@ -81,7 +81,7 @@ class ButtonTypeTest extends FormBuilderTestCase
         ];
 
         $button = new ButtonType('some_submit', 'submit', $this->plainForm, [
-            'template' => 'laravel-form-builder::text'
+            'template' => 'form-builder::text'
         ]);
 
         $renderedView = $button->render();

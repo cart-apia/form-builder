@@ -1,8 +1,8 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Events;
+namespace Cartapia\FormBuilder\Events;
 
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Form;
 
 class AfterFormCreation
 {

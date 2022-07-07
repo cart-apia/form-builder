@@ -1,6 +1,6 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Traits;
+namespace Cartapia\FormBuilder\Traits;
 
 trait ValidatesWhenResolved
 {

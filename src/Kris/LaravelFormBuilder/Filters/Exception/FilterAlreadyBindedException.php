@@ -1,11 +1,11 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Filters\Exception;
+namespace Cartapia\FormBuilder\Filters\Exception;
 
 /**
  * Class FilterAlreadyBinded
  *
- * @package Kris\LaravelFormBuilder\Filters\Exception
+ * @package Cartapia\FormBuilder\Filters\Exception
  * @author  Djordje Stojiljkovic <djordjestojilljkovic@gmail.com>
  */
 class FilterAlreadyBindedException extends \Exception

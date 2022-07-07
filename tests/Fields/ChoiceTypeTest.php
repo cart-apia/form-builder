@@ -1,6 +1,6 @@
 <?php
 
-use Kris\LaravelFormBuilder\Fields\ChoiceType;
+use Cartapia\FormBuilder\Fields\ChoiceType;
 
 class ChoiceTypeTest extends FormBuilderTestCase
 {
@@ -41,7 +41,7 @@ class ChoiceTypeTest extends FormBuilderTestCase
 
         $this->assertEquals('tuesday', $choice->getOption('selected'));
 
-        $this->assertContainsOnlyInstancesOf('Kris\LaravelFormBuilder\Fields\CheckableType', $choice->getChildren());
+        $this->assertContainsOnlyInstancesOf('Cartapia\FormBuilder\Fields\CheckableType', $choice->getChildren());
     }
 
     /** @test */
@@ -61,13 +61,13 @@ class ChoiceTypeTest extends FormBuilderTestCase
         $this->assertEquals(2, count($choice->getChildren()));
 
         $this->assertInstanceOf(
-            'Kris\LaravelFormBuilder\Fields\CheckableType',
+            'Cartapia\FormBuilder\Fields\CheckableType',
             $choice->getChild(1)
         );
 
         $this->assertEquals('no', $choice->getOption('selected'));
 
-        $this->assertContainsOnlyInstancesOf('Kris\LaravelFormBuilder\Fields\CheckableType', $choice->getChildren());
+        $this->assertContainsOnlyInstancesOf('Cartapia\FormBuilder\Fields\CheckableType', $choice->getChildren());
     }
 
     /** @test */

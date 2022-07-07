@@ -1,10 +1,10 @@
 <?php
 
-namespace Kris\LaravelFormBuilder;
+namespace Cartapia\FormBuilder;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Kris\LaravelFormBuilder\Fields\FormField;
+use Cartapia\FormBuilder\Fields\FormField;
 
 /**
  * Laravel Validator rules to HTML5 attributes parser.

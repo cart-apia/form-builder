@@ -27,21 +27,21 @@ return [
         //],
     ],
     // Templates
-    'form'          => 'laravel-form-builder::form',
-    'text'          => 'laravel-form-builder::text',
-    'textarea'      => 'laravel-form-builder::textarea',
-    'button'        => 'laravel-form-builder::button',
-    'buttongroup'   => 'laravel-form-builder::buttongroup',
-    'radio'         => 'laravel-form-builder::radio',
-    'checkbox'      => 'laravel-form-builder::checkbox',
-    'select'        => 'laravel-form-builder::select',
-    'choice'        => 'laravel-form-builder::choice',
-    'repeated'      => 'laravel-form-builder::repeated',
-    'child_form'    => 'laravel-form-builder::child_form',
-    'collection'    => 'laravel-form-builder::collection',
-    'static'        => 'laravel-form-builder::static',
+    'form'          => 'form-builder::form',
+    'text'          => 'form-builder::text',
+    'textarea'      => 'form-builder::textarea',
+    'button'        => 'form-builder::button',
+    'buttongroup'   => 'form-builder::buttongroup',
+    'radio'         => 'form-builder::radio',
+    'checkbox'      => 'form-builder::checkbox',
+    'select'        => 'form-builder::select',
+    'choice'        => 'form-builder::choice',
+    'repeated'      => 'form-builder::repeated',
+    'child_form'    => 'form-builder::child_form',
+    'collection'    => 'form-builder::collection',
+    'static'        => 'form-builder::static',
 
-    // Remove the laravel-form-builder:: prefix above when using template_prefix
+    // Remove the form-builder:: prefix above when using template_prefix
     'template_prefix'   => '',
 
     'default_namespace' => '',
@@ -50,7 +50,7 @@ return [
 //        'datetime' => App\Forms\Fields\Datetime::class
     ],
 
-    'plain_form_class' => \Kris\LaravelFormBuilder\Form::class,
-    'form_builder_class' => \Kris\LaravelFormBuilder\FormBuilder::class,
-    'form_helper_class' => \Kris\LaravelFormBuilder\FormHelper::class,
+    'plain_form_class' => \Cartapia\FormBuilder\Form::class,
+    'form_builder_class' => \Cartapia\FormBuilder\FormBuilder::class,
+    'form_helper_class' => \Cartapia\FormBuilder\FormHelper::class,
 ];

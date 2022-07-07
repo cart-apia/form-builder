@@ -1,13 +1,13 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Filters\Collection;
+namespace Cartapia\FormBuilder\Filters\Collection;
 
-use Kris\LaravelFormBuilder\Filters\FilterInterface;
+use Cartapia\FormBuilder\Filters\FilterInterface;
 
 /**
  * Class Lowercase
  *
- * @package Kris\LaravelFormBuilder\Filters\Collection
+ * @package Cartapia\FormBuilder\Filters\Collection
  * @author  Djordje Stojiljkovic <djordjestojilljkovic@gmail.com>
  */
 class Lowercase implements FilterInterface
@@ -48,7 +48,7 @@ class Lowercase implements FilterInterface
     /**
      * @param null $encoding
      *
-     * @return \Kris\LaravelFormBuilder\Filters\Collection\Lowercase
+     * @return \Cartapia\FormBuilder\Filters\Collection\Lowercase
      *
      * @throws \Exception
      */

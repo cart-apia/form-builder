@@ -1,14 +1,14 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Filters\Exception;
+namespace Cartapia\FormBuilder\Filters\Exception;
 
-use Kris\LaravelFormBuilder\Filters\FilterInterface;
+use Cartapia\FormBuilder\Filters\FilterInterface;
 use Throwable;
 
 /**
  * Class InvalidInstanceException
  *
- * @package Kris\LaravelFormBuilder\Filters\Exception
+ * @package Cartapia\FormBuilder\Filters\Exception
  * @author  Djordje Stojiljkovic <djordjestojilljkovic@gmail.com>
  */
 class InvalidInstanceException extends \Exception

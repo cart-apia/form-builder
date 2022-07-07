@@ -1,20 +1,20 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Fields;
+namespace Cartapia\FormBuilder\Fields;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Kris\LaravelFormBuilder\Filters\Exception\FilterAlreadyBindedException;
-use Kris\LaravelFormBuilder\Filters\FilterInterface;
-use Kris\LaravelFormBuilder\Filters\FilterResolver;
-use Kris\LaravelFormBuilder\Form;
-use Kris\LaravelFormBuilder\FormHelper;
-use Kris\LaravelFormBuilder\Rules;
+use Cartapia\FormBuilder\Filters\Exception\FilterAlreadyBindedException;
+use Cartapia\FormBuilder\Filters\FilterInterface;
+use Cartapia\FormBuilder\Filters\FilterResolver;
+use Cartapia\FormBuilder\Form;
+use Cartapia\FormBuilder\FormHelper;
+use Cartapia\FormBuilder\Rules;
 
 /**
  * Class FormField
  *
- * @package Kris\LaravelFormBuilder\Fields
+ * @package Cartapia\FormBuilder\Fields
  */
 abstract class FormField
 {
@@ -855,7 +855,7 @@ abstract class FormField
      *
      * @param  array $filters
      *
-     * @return \Kris\LaravelFormBuilder\Fields\FormField
+     * @return \Cartapia\FormBuilder\Fields\FormField
      */
     public function setFilters(array $filters)
     {
@@ -881,7 +881,7 @@ abstract class FormField
     /**
      * @param  string|FilterInterface $filter
      *
-     * @return \Kris\LaravelFormBuilder\Fields\FormField
+     * @return \Cartapia\FormBuilder\Fields\FormField
      *
      * @throws FilterAlreadyBindedException
      */
@@ -919,7 +919,7 @@ abstract class FormField
      *
      * @param  string $name
      *
-     * @return \Kris\LaravelFormBuilder\Fields\FormField
+     * @return \Cartapia\FormBuilder\Fields\FormField
      */
     public function removeFilter($name)
     {
@@ -937,7 +937,7 @@ abstract class FormField
      *
      * @param  array $filterNames
      *
-     * @return \Kris\LaravelFormBuilder\Fields\FormField
+     * @return \Cartapia\FormBuilder\Fields\FormField
      */
     public function removeFilters(array $filterNames)
     {
@@ -955,7 +955,7 @@ abstract class FormField
     /**
      * Method clearFilters used to empty current filters property.
      *
-     * @return \Kris\LaravelFormBuilder\Fields\FormField
+     * @return \Cartapia\FormBuilder\Fields\FormField
      */
     public function clearFilters()
     {
@@ -968,7 +968,7 @@ abstract class FormField
      *
      * @param $status
      *
-     * @return \Kris\LaravelFormBuilder\Fields\FormField
+     * @return \Cartapia\FormBuilder\Fields\FormField
      */
     public function setFiltersOverride($status)
     {
@@ -990,7 +990,7 @@ abstract class FormField
      *
      * @param mixed $value
      *
-     * @return \Kris\LaravelFormBuilder\Fields\FormField
+     * @return \Cartapia\FormBuilder\Fields\FormField
      */
     public function setRawValue($value)
     {

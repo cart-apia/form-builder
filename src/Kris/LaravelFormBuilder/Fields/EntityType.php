@@ -1,6 +1,6 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Fields;
+namespace Cartapia\FormBuilder\Fields;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;

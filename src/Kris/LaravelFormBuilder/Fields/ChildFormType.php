@@ -1,8 +1,8 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Fields;
+namespace Cartapia\FormBuilder\Fields;
 
-use Kris\LaravelFormBuilder\Form;
+use Cartapia\FormBuilder\Form;
 
 class ChildFormType extends ParentType
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Kris\LaravelFormBuilder;
+namespace Cartapia\FormBuilder;
 
 use InvalidArgumentException;
 

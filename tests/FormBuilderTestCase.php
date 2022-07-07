@@ -3,10 +3,10 @@
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Contracts\Validation\Factory;
 use Illuminate\Database\Eloquent\Model;
-use Kris\LaravelFormBuilder\Filters\FilterResolver;
-use Kris\LaravelFormBuilder\Form;
-use Kris\LaravelFormBuilder\FormBuilder;
-use Kris\LaravelFormBuilder\FormHelper;
+use Cartapia\FormBuilder\Filters\FilterResolver;
+use Cartapia\FormBuilder\Form;
+use Cartapia\FormBuilder\FormBuilder;
+use Cartapia\FormBuilder\FormHelper;
 use Orchestra\Testbench\TestCase;
 use PHPUnit\Framework\Constraint\IsIdentical;
 use Symfony\Component\EventDispatcher\EventDispatcher;
@@ -242,14 +242,14 @@ abstract class FormBuilderTestCase extends TestCase {
     {
         return [
             'Collective\Html\HtmlServiceProvider',
-            'Kris\LaravelFormBuilder\FormBuilderServiceProvider',
+            'Cartapia\FormBuilder\FormBuilderServiceProvider',
         ];
     }
 
     protected function getPackageAliases($app)
     {
         return [
-            'Acme' => 'Kris\LaravelFormBuilder\Facades\FormBuilder',
+            'Acme' => 'Cartapia\FormBuilder\Facades\FormBuilder',
             'Form' => 'Collective\Html\FormFacade',
             'Html' => 'Collective\Html\HtmlFacade',
         ];

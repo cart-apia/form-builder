@@ -1,6 +1,6 @@
 <?php
 
-use Kris\LaravelFormBuilder\Fields\TextareaType;
+use Cartapia\FormBuilder\Fields\TextareaType;
 
 class TextareaTypeTest extends FormBuilderTestCase
 {

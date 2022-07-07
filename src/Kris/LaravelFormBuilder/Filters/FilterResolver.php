@@ -1,14 +1,14 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Filters;
+namespace Cartapia\FormBuilder\Filters;
 
-use Kris\LaravelFormBuilder\Filters\Exception\InvalidInstanceException;
-use Kris\LaravelFormBuilder\Filters\Exception\UnableToResolveFilterException;
+use Cartapia\FormBuilder\Filters\Exception\InvalidInstanceException;
+use Cartapia\FormBuilder\Filters\Exception\UnableToResolveFilterException;
 
 /**
  * Class FilterResolver
  *
- * @package Kris\LaravelFormBuilder\Filters
+ * @package Cartapia\FormBuilder\Filters
  * @author  Djordje Stojiljkovic <djordjestojilljkovic@gmail.com>
  */
 class FilterResolver
@@ -77,6 +77,6 @@ class FilterResolver
      */
     public static function getCollectionNamespace()
     {
-        return "\\Kris\\LaravelFormBuilder\\Filters\\Collection\\";
+        return "\\Cartapia\\FormBuilder\\Filters\\Collection\\";
     }
 }

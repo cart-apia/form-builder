@@ -1,13 +1,13 @@
 <?php
 
-namespace Kris\LaravelFormBuilder\Filters\Collection;
+namespace Cartapia\FormBuilder\Filters\Collection;
 
-use Kris\LaravelFormBuilder\Filters\FilterInterface;
+use Cartapia\FormBuilder\Filters\FilterInterface;
 
 /**
  * Class BaseName
  *
- * @package Kris\LaravelFormBuilder\Filters\Collection
+ * @package Cartapia\FormBuilder\Filters\Collection
  * @author  Djordje Stojiljkovic <djordjestojilljkovic@gmail.com>
  */
 class HtmlEntities implements FilterInterface
@@ -73,7 +73,7 @@ class HtmlEntities implements FilterInterface
     /**
      * @param integer $style
      *
-     * @return \Kris\LaravelFormBuilder\Filters\Collection\HtmlEntities
+     * @return \Cartapia\FormBuilder\Filters\Collection\HtmlEntities
      */
     public function setQuoteStyle($style)
     {
@@ -92,7 +92,7 @@ class HtmlEntities implements FilterInterface
     /**
      * @param  string $encoding
      *
-     * @return \Kris\LaravelFormBuilder\Filters\Collection\HtmlEntities
+     * @return \Cartapia\FormBuilder\Filters\Collection\HtmlEntities
      */
     public function setEncoding($encoding)
     {
@@ -119,7 +119,7 @@ class HtmlEntities implements FilterInterface
      *
      * @param  string $charSet
      *
-     * @return \Kris\LaravelFormBuilder\Filters\Collection\HtmlEntities
+     * @return \Cartapia\FormBuilder\Filters\Collection\HtmlEntities
      */
     public function setCharSet($charSet)
     {
@@ -141,7 +141,7 @@ class HtmlEntities implements FilterInterface
      *
      * @param  boolean $doubleQuote
      *
-     * @return \Kris\LaravelFormBuilder\Filters\Collection\HtmlEntities
+     * @return \Cartapia\FormBuilder\Filters\Collection\HtmlEntities
      */
     public function setDoubleQuote($doubleQuote)
     {
