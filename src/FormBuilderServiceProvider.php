@@ -27,7 +27,7 @@ class FormBuilderServiceProvider extends ServiceProvider
         $this->commands('Cartapia\FormBuilder\Console\FormMakeCommand');
 
         $this->mergeConfigFrom(
-            dirname(__DIR__, 2) . '/config/config.php',
+            dirname(__DIR__) . '/config/config.php',
             'form-builder'
         );
 
@@ -98,11 +98,11 @@ class FormBuilderServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/../../views', 'form-builder');
+        $this->loadViewsFrom(__DIR__ . '/../views', 'form-builder');
 
         $this->publishes([
-            __DIR__ . '/../../views' => base_path('resources/views/vendor/form-builder'),
-            __DIR__ . '/../../config/config.php' => config_path('form-builder.php')
+            __DIR__ . '/../views' => base_path('resources/views/vendor/form-builder'),
+            __DIR__ . '/../config/config.php' => config_path('form-builder.php')
         ]);
 
         $form = $this->app[static::FORM_ABSTRACT];

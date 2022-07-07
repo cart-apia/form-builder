@@ -193,7 +193,7 @@ abstract class FormBuilderTestCase extends TestCase {
         $this->validatorFactory = $this->app['validator'];
         $this->eventDispatcher = $this->app['events'];
         $this->model = new TestModel();
-        $this->config = include __DIR__.'/../src/config/config.php';
+        $this->config = include __DIR__.'/../config/config.php';
 
         $this->formHelper = new FormHelper($this->view, $this->translator, $this->config);
         $this->formBuilder = new FormBuilder($this->app, $this->formHelper, $this->eventDispatcher);
