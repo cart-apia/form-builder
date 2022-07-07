@@ -13,7 +13,7 @@ if(!function_exists('getFormBuilderViewPath'))
             throw new Exception('You should use only *.php files with this function');
 
         $path = base_path('resources/views/vendor/form-builder/'.$fileName);
-        return file_exists($path) ? $path : __DIR__.'/views/'.$fileName;
+        return file_exists($path) ? $path : __DIR__.'/../views/'.$fileName;
     }
 }
 
